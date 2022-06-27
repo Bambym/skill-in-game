@@ -1,0 +1,99 @@
+@font-face {font-family: "Snap ITC";
+    src: url("../fonts/police_h1/@font-face/d0725db773b460ed3a456370c80f875d.eot"); /* IE9*/
+    src: url("../fonts/police_h1/@font-face/d0725db773b460ed3a456370c80f875d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/police_h1/@font-face/d0725db773b460ed3a456370c80f875d.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/police_h1/@font-face/d0725db773b460ed3a456370c80f875d.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/police_h1/@font-face/d0725db773b460ed3a456370c80f875d.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/police_h1/@font-face/d0725db773b460ed3a456370c80f875d.svg#Snap ITC") format("svg"); /* iOS 4.1- */
+  }
+
+
+
+#menu-header{
+    
+    background-color: #011740;
+    height: auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #ee05f2;
+    
+
+}
+#logo{
+    width: 338px;
+    text-align: center;
+    margin: auto;
+   
+   
+    
+}
+.menuNav{
+    display: flex;
+    align-items: flex-end;
+}
+#title-nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1{
+    color: #FFF;
+    font-family: "Snap ITC";
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 40px;
+
+}
+
+ul> li>.nav-link-1{
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin-right: 3rem;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 156px;
+    height: 45px; 
+    text-decoration: none;
+    color: #FFF;
+}
+ul> li>.nav-link-2{
+    border: 2px solid green;
+    margin-right: 3rem;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 156px;
+    height: 45px; 
+    text-decoration: none;
+    color: #FFF;
+}
+
+ul> li>.nav-link-3{
+    border: 2px solid violet;
+    margin-right: 3rem;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 156px;
+    height: 45px; 
+    text-decoration: none;
+    color: #FFF;
+}
+ul> li>.nav-link-4{
+    border: 2px solid red;
+    margin-right: 3rem;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5rem;
+    width: 156px;
+    height: 45px; 
+    text-decoration: none;
+    color: #FFF;
+}

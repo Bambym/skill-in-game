@@ -1,0 +1,13 @@
+.profil{
+    background: url(../../img/fond.jpg);
+    padding-bottom: 10px;
+    
+}
+.contentProfil{
+    display: flex;
+    justify-content: space-between;
+
+}
+.row{
+   width: 100%;
+}

@@ -1,0 +1,13 @@
+.bgSearch {
+  display: flex;
+  background: url("../img/bg6.jpg");
+  background-size: cover;
+    box-sizing: inherit;
+  justify-content: center;
+}
+.searchContent {
+  width: 60%;
+  background: url("../img/fond.jpg");
+  background-size:cover ;
+  height: auto;
+}  

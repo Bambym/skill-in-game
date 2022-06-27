@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'maqueenregular';
+  src: url('../fonts/police_accueil/maqueen_demo-webfont.woff2') format('woff2'),
+       url('../fonts/police_accueil/maqueen_demo-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+#containerAccueil{
+    display: flex;
+    background: url("../img/bg6.jpg");
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+    
+}
+
+
+#accueil{
+    width: 60%;
+   
+    background: url("../img/fond.jpg");
+    background-size: cover;
+    font-family:"maqueenregular";
+    color: white;
+    font-size: 2.5rem;
+    text-align: justify;
+    text-align: center;
+    z-index: 1;
+    
+}   
+#accueil>h2{
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+button.box{
+    all: unset;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #011740;
+    position: relative;
+    margin: 2rem;
+    
+  }
+  button.box::before,
+  button.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff0000, #00f0f0, #00ff00, #0000ff, #ff0000, #00f0f0, #00ff00, #0000ff, #f00f0f);
+    width: 100%;
+    height: 100%;
+    transform: scale(1.05);
+    z-index: -1;
+    background-size: 500%;
+    animation: animate 20s infinite;
+    border-radius: 10px;
+  }
+  button.box::after {
+    filter: blur(20px);
+  }
+  @keyframes animate {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+  }
+
+  
+  
+  
+  
+  

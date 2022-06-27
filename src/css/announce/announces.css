@@ -1,0 +1,15 @@
+
+.allAnnounces{
+    background: url("../../img/fond.jpg");
+    color: white;
+}
+
+.annoucementContent{
+    min-height:300px;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.tableAllAnnounces{
+    padding-bottom: 50px;
+}
