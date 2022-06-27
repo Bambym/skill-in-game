@@ -1,0 +1,16 @@
+.footer{
+    background-color:#011740 ;
+    color: white;
+}
+.headFooter{
+    background: linear-gradient(
+     rgba(0, 0, 0, 0.10), 
+     rgba(0, 0, 0, 0.10)
+   )
+}
+.footerFooter{
+    background: linear-gradient(
+     rgba(0, 0, 0, 0.45), 
+     rgba(0, 0, 0, 0.45)
+   )
+}

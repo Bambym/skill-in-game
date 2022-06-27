@@ -15,7 +15,7 @@ const PrivateRoute = ({render}) => {
     
     const [ authorized, setAuthorized]=useState(false)
     const [uid, setUid] = useState(null)
-
+    // création d'une route privée en effectuant une props de rendu pour récupérer uid 
     useEffect(()=>{
         onAuthStateChanged(auth, (user) => {
             if(user) {

@@ -18,8 +18,9 @@ const Search = ({uid}) => {
                     className={activeTab === index.toString() ? "active" : ""}
                     onClick={() => setActiveTab(`${index}`)}
                     uid={uid}
+                    
                   >
-                    <img src={tab.icon}/> {tab.tabTitle}
+                    <div style={{cursor:"pointer"}}><img src={tab.icon}/> {tab.tabTitle}</div>
                   </NavLink>
                 </NavItem>
               );
