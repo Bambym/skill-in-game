@@ -36,7 +36,7 @@ const GameContent = () => {
               <CardGame
                 title={game.Title}
                 description={game.Description}
-                img={game.image}
+                img={game.Image}
                 id={game.ID_jeu}
               />
           </Col>

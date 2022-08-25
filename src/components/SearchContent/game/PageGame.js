@@ -1,11 +1,12 @@
 import React, {useState,useEffect} from "react";
 
-import { Table,Button } from "reactstrap";
+import { Table } from "reactstrap";
 import { useParams } from "react-router-dom";
+import FriendRequest from "../FriendRequest"
 import ("../../../css/game/pageGame.css")
 
 
-const PageGame = () => {
+const PageGame = ({uid}) => {
   const [datas, setDatas] = useState([]);
   const params = useParams();
   useEffect(() => {
@@ -37,6 +38,8 @@ const PageGame = () => {
             <th>index</th>
             <th>Username</th>
             <th>Annonces</th>
+            <th>Console</th>
+            <th>Jeu</th>
             <th></th>
           </tr>
         
@@ -45,9 +48,11 @@ const PageGame = () => {
       {datas.map((data,index) => (
         <tr>
           <th scope="row">{index}</th>
-          <td>{data.User.ID_user}</td>
+          <td>{data.User.userName}</td>
           <td>{data.Description}</td>
-          <td><Button>demande d'ami</Button></td>
+          <td>{data.Console.Name}</td>
+          <td>{data.game.Title}</td>
+          <td>{data.User.ID_user!==uid ? <FriendRequest uid={uid} idUserAnnounce={data.User.ID_user}/>:""}</td>
         </tr>
       ))}
       </tbody>

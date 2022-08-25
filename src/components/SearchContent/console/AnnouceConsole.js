@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Table, Button } from "reactstrap";
+import { Table } from "reactstrap";
+import FriendRequest from "../FriendRequest";
 import ("../../../css/console/announceConsole.css")
 
 
@@ -55,7 +56,7 @@ const AnnouceConsole = ({uid}) => {
             <td > {announceData.Console.Name} </td>
             <td > {announceData.User.userName} </td>
             <td>
-              <Button> demande d 'ami</Button>
+              {announceData.User.ID_user!==uid ? <FriendRequest uid={uid} idUserAnnounce={announceData.User.ID_user}/>:""}
             </td>
           </tr>
         ))}

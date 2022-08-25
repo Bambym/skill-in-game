@@ -1,7 +1,8 @@
 import React ,{useState,useEffect} from 'react'
-import { Button } from 'reactstrap'
+import { Button,Alert } from 'reactstrap'
 
 const FriendRequest = ({uid,idUserAnnounce}) => {
+  const[friendRequestError,setFriendRequestError] = useState("")
     const handleSubmit = async () => {
         console.log("handleSubmit");
         try {
@@ -28,12 +29,16 @@ const FriendRequest = ({uid,idUserAnnounce}) => {
           
         } catch (error) {
           const code = error.message;
-          console.log(code);
+          console.log(error);
+          let messageError = 
+            code === "Validation error" && "la demande a déja été faite";
+          setFriendRequestError(messageError);
         }
       };
     return (
     <>  
          <Button onClick={handleSubmit}>Demande d'ami</Button>
+         {friendRequestError !== "" && <Alert color="danger">{friendRequestError}</Alert>}
     </>
   )
 }

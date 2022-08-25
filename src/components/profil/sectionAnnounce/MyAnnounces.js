@@ -33,7 +33,7 @@ const MyAnnounces = ({ uid }) => {
 
   return (
     <div className="myAnnounces">
-      <h3>Tes Annonces</h3>
+      <h3>TES ANNONCES</h3>
       <AddAnnounces uid={uid} reloadProfile={reloadProfile}/>
       <Table className="table table-dark table-hover">
         <thead>

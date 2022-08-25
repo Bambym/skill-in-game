@@ -15,7 +15,7 @@ const AnnoucementContent = () => {
   return (
     <div className="annoucementContent">
       
-      <Button onClick={handleClick} type="submit">VOIR TOUTES LES ANNONCES</Button>
+      <Button className="announce" onClick={handleClick} type="submit">VOIR TOUTES LES ANNONCES</Button>
 
     </div>
   );

@@ -1,24 +1,15 @@
-
-.allAnnounces{
-    background: url("../../img/fond.jpg");
+.cardGame{
+    border: 3px solid #ee05f2 !important;
+    border-radius: 10px !important;
     color: white;
-}
-
-.annoucementContent{
-    min-height:300px;
-    text-align: center;
-    padding-top: 100px;  
+    background-color:#011740 !important;
     z-index: 1;
     position: relative;
 }
-.tableAllAnnounces{
-    padding-bottom: 50px;
-}
-
-button.announce:hover{
+button.game:hover{
     background-color: #011740;
 }
-button.announce{
+button.game{
     all: unset;
     border-radius: 10px;
     width: 150px;
@@ -29,8 +20,8 @@ button.announce{
     color: white;
     
   }
-  button.announce::before,
-  button.announce::after {
+  button.game::before,
+  button.game::after {
     content: '';
     position: absolute;
     top: 0;
@@ -44,7 +35,7 @@ button.announce{
     animation: animate 20s infinite;
     border-radius: 10px;
   }
-  button.announce::after {
+  button.game::after {
     filter: blur(20px);
   }
   @keyframes animate {

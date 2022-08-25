@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Row, Col } from "reactstrap";
 import MenuNav from "./MenuNav";
 import "../../css/menu-header.css";
-import monLogo from "../../img/monLogo.png";
+import monLogo from "../../img/monLogo2.svg";
 
 export default class MenuHeader extends Component {
   render() {

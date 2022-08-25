@@ -1,5 +1,5 @@
 import React ,{useState,useEffect}from 'react'
-import { Table,Button } from "reactstrap";
+import { Table} from "reactstrap";
 import FriendRequest from "../FriendRequest";
 import "../../../css/announce/announces.css"
 
@@ -38,6 +38,8 @@ const AllAnnounces = ({uid}) => {
               <th>index</th>
               <th>Username</th>
               <th>Annonces</th>
+              <th>Console</th>
+              <th>Jeux</th>
               <th></th>
             </tr>
           
@@ -46,8 +48,10 @@ const AllAnnounces = ({uid}) => {
         {datas.map((data,index) => (
           <tr>
             <th scope="row">{index}</th>
-            <td>{data.User.ID_user}</td>
+            <td>{data.User.userName}</td>
             <td>{data.Description}</td>
+            <td>{data.Console.Name}</td>
+            <td>{data.game.Title}</td>
             <td>{data.User.ID_user!==uid ? <FriendRequest uid={uid} idUserAnnounce={data.User.ID_user}/>:""}</td>
           </tr>
         ))}

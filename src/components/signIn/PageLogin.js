@@ -78,7 +78,7 @@ const Login = () => {
                 className="email"
                 id="email"
                 name="email"
-                placeholder="with a placeholder"
+                placeholder="tape ton email"
                 type="email"
                 value={formik.values.email}
                 onChange={formik.handleChange}
@@ -92,7 +92,7 @@ const Login = () => {
                 className="password"
                 id="password"
                 name="password"
-                placeholder="with a placeholder"
+                placeholder="tape ton mot de passe"
                 type="password"
                 value={formik.values.password}
                 onChange={formik.handleChange}

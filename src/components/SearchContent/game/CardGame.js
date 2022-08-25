@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { CardGroup,CardBody,CardTitle,CardText,Button,Card,CardImg } from "reactstrap";
+import "../../../css/game/cardGame.css"
 
 const CardGame = ({ title, description, id, img }) => {
     let navigate = useNavigate()
@@ -9,12 +10,12 @@ const CardGame = ({ title, description, id, img }) => {
     }
     return (
     <CardGroup>
-      <Card id={id} >
-        <CardImg alt={title} src={img} top width="100%" />
+      <Card className="cardGame" id={id} >
+        <CardImg alt={title} src= {img} top width="100%" />
         <CardBody>
           <CardTitle tag="h5">{title}</CardTitle>
           <CardText>{description}</CardText>
-          <Button onClick={handleClick} type="submit">Trouvez les annonces</Button>
+          <Button className="game" onClick={handleClick} type="submit">Trouvez les annonces</Button>
         </CardBody>
       </Card>
     </CardGroup>

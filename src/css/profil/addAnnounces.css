@@ -1,24 +1,13 @@
-
-.allAnnounces{
-    background: url("../../img/fond.jpg");
-    color: white;
-}
-
-.annoucementContent{
-    min-height:300px;
-    text-align: center;
-    padding-top: 100px;  
+.buttonAddAnnounce{
     z-index: 1;
     position: relative;
+    text-align: center;
+    margin-top: 4rem;
 }
-.tableAllAnnounces{
-    padding-bottom: 50px;
+button.addAnnounce:hover{
+    background:#011740;
 }
-
-button.announce:hover{
-    background-color: #011740;
-}
-button.announce{
+button.addAnnounce{
     all: unset;
     border-radius: 10px;
     width: 150px;
@@ -26,11 +15,10 @@ button.announce{
     background-color: #011740;
     position: relative;
     margin: 2rem;
-    color: white;
     
   }
-  button.announce::before,
-  button.announce::after {
+  button.addAnnounce::before,
+  button.addAnnounce::after {
     content: '';
     position: absolute;
     top: 0;
@@ -44,7 +32,7 @@ button.announce{
     animation: animate 20s infinite;
     border-radius: 10px;
   }
-  button.announce::after {
+  button.addAnnounce::after {
     filter: blur(20px);
   }
   @keyframes animate {
@@ -52,3 +40,4 @@ button.announce{
     50% { background-position: 300% 0; }
     100% { background-position: 0 0; }
   }
+

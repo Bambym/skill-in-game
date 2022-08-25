@@ -29,7 +29,7 @@ const ConsoleContent = () => {
 
   return (
     <div>
-      <h2>Toutes les Consoles de jeux</h2>
+      <h2>TOUTES LES CONSOLES DE JEUX</h2>
       <Container>
         <Row md="3" sm="2" xs="1" style={{margin:"auto"}}>
             {consolesData.map((console, index) => (

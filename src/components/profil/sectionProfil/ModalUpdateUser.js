@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import "../../../css/profil/modalUpdateUser.css"
 
 const validationSchema = yup.object({
   username: yup
@@ -67,8 +68,8 @@ const ModalUpdateUser = ({ uid, reloadProfile, username }) => {
     onSubmit: handleSubmit,
   });
   return (
-    <>
-      <Button onClick={handleOpen}>Mise à Jour</Button>
+    <div className="buttonMaj">
+      <Button className="maj" onClick={handleOpen}>Mise à Jour</Button>
 
       <Modal isOpen={modal}>
         <Form onSubmit={formik.handleSubmit}>
@@ -101,7 +102,7 @@ const ModalUpdateUser = ({ uid, reloadProfile, username }) => {
           </ModalFooter>
         </Form>
       </Modal>
-    </>
+    </div>
   );
 };
 

@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import "../../../css/profil/addAnnounces.css"
 
 const validationSchema = yup.object({
   Title: yup
@@ -121,8 +122,8 @@ const AddAnnounces = ({ uid,reloadProfile }) => {
     onSubmit: handleSubmit,
   });
   return (
-    <Fragment>
-      <Button onClick={handleOpen}>Ajouter des annonces</Button>
+    <div className="buttonAddAnnounce">
+      <Button className="addAnnounce" onClick={handleOpen}>Ajouter des annonces</Button>
 
       <Modal isOpen={modal}>
         <Form onSubmit={formik.handleSubmit}>
@@ -186,7 +187,7 @@ const AddAnnounces = ({ uid,reloadProfile }) => {
                 <FormFeedback>{formik.errors.ID_jeu}</FormFeedback>
               </FormGroup>
               <FormGroup>
-                <Label for="ID_console">Sélectionne ton jeu</Label>
+                <Label for="ID_console">Sélectionne ta console</Label>
                 <Input
                   id="ID_console"
                   value={formik.values.ID_console}
@@ -217,7 +218,7 @@ const AddAnnounces = ({ uid,reloadProfile }) => {
           </ModalFooter>
         </Form>
       </Modal>
-    </Fragment>
+    </div>
   );
 };
 

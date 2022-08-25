@@ -1,4 +1,7 @@
 .myAnnounces{
     color: white;
 }
-
+.myAnnounces>h3{
+    text-align: center;
+   
+}

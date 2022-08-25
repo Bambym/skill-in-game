@@ -40,21 +40,7 @@ const SignUp = () => {
   const [signUpError, setSignUpError] = useState("");
 
   const handleSubmit = async ({ email, password }) => {
-    //   const auth = getAuth();
-    //   createUserWithEmailAndPassword(auth, email, password)
-    //     .then((userCredential) => {
-    //       // Signed in
-    //       const user = userCredential.user;
-    //       console.log(user)
-    //       let id = user.uid
-    //       navigate(`/user/${id}/profil`)
-    //     })
-    //     .catch((error) => {
-    //       const errorCode = error.code;
-    //       const errorMessage = error.message;
-    //       // ..
-    //     });
-    // };
+    
     try {
       setIsLoading(true);
       const auth = getAuth();
@@ -127,7 +113,7 @@ const SignUp = () => {
             className="confirmEmail"
             id="confirmEmail"
             name="confirmEmail"
-            placeholder="confirmez votre Email"
+            placeholder="confirmez votre email"
             type="confirmEmail"
             value={formik.values.confirmEmail}
             onChange={formik.handleChange}

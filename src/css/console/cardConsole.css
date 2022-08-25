@@ -1,24 +1,18 @@
-
-.allAnnounces{
-    background: url("../../img/fond.jpg");
-    color: white;
-}
-
-.annoucementContent{
-    min-height:300px;
-    text-align: center;
-    padding-top: 100px;  
+.cardConsole{
+    border: 3px solid #ee05f2 !important ;
+    border-radius: 10px !important;
     z-index: 1;
     position: relative;
+    color: white;
+    background-color: #011740 !important;
 }
-.tableAllAnnounces{
-    padding-bottom: 50px;
+.imageConsole{
+  height: 10rem;
 }
-
-button.announce:hover{
+button.console:hover{
     background-color: #011740;
 }
-button.announce{
+button.console{
     all: unset;
     border-radius: 10px;
     width: 150px;
@@ -29,8 +23,8 @@ button.announce{
     color: white;
     
   }
-  button.announce::before,
-  button.announce::after {
+  button.console::before,
+  button.console::after {
     content: '';
     position: absolute;
     top: 0;
@@ -44,7 +38,7 @@ button.announce{
     animation: animate 20s infinite;
     border-radius: 10px;
   }
-  button.announce::after {
+  button.console::after {
     filter: blur(20px);
   }
   @keyframes animate {

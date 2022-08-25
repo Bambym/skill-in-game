@@ -71,7 +71,7 @@ function App() {
                 <PrivateRoute render={(uid) => <AllAnnounces uid={uid} />} />
               }
             />
-          <Route path="/formContact" element={<ContactContent />} />
+          <Route path="/formContact" element= {<ContactContent />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -2,10 +2,15 @@
     background: url(../../img/fond.jpg);
     padding-bottom: 10px;
     
+    
+}
+.profil>h2{
+    text-decoration: underline;
 }
 .contentProfil{
     display: flex;
     justify-content: space-between;
+    min-height: 300px;
 
 }
 .row{

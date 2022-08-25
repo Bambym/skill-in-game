@@ -24,7 +24,7 @@ const Profil = ({ uid }) => {
 
   return (
     <div className="profil">
-      <h2>Mon Profil</h2>
+      <h2>TABLEAU DE BORD</h2>
       <div className="contentProfil">
         
 

@@ -56,7 +56,7 @@ const FriendsContent = ({ uid }) => {
 
   return (
     <div className="myFriends">
-      <h3>Ta liste d'ami</h3>
+      <h3>TA LISTE D'AMI</h3>
      
         {friendData
           .filter((friend) => friend.id_demandeur === uid)

@@ -4,10 +4,16 @@
   background-size: cover;
     box-sizing: inherit;
   justify-content: center;
+  min-height: 300px;
+  
 }
 .searchContent {
   width: 60%;
   background: url("../img/fond.jpg");
   background-size:cover ;
   height: auto;
+  
 }  
+.itemNav{
+  color: #fd04e4;
+}

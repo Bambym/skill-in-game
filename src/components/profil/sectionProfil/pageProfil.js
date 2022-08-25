@@ -11,7 +11,7 @@ const PageProfil = ({uid}) => {
  
   useEffect(() => {
     getProfil();
-  }, [reload,uid]);
+  }, [reload, uid]);
 
   const getProfil = async () => {
     const initConfig = {
@@ -36,12 +36,12 @@ const PageProfil = ({uid}) => {
     
     
     <div className="pageProfil">
-      <h3 style={{ color: "white" }}>Profil</h3>
+      <h3>PROFIL</h3>
       {profilData.map((profil, index) => (
         <div className="myProfil">
           
-          <p style={{ color: "white" }}>
-            Nom d'utilisateur = 
+          <p >
+            Nom d'utilisateur : 
             {profil.userName === null ? (
               <>...</>
             ) : (
